@@ -1,0 +1,36 @@
+OBS 19/20
+
+pagina talvez inútil --> "upload-imagem.php"
+ 
+
+pagina talvez no lugar errado --> "logout.php" cpa o ugar dela é dentu da pasta php
+
+
+Não é possível remover a foto de perfil após escolher uma
+
+
+ter uma foto de perfil padrão da muito problema 
+
+
+css do "selecionar_foto" esta nada a ver com o resto do site (azul)
+
+
+a "home" não tem uma scroll bar, então não é possível clicar no botão de sair da conta no rodapé da pagina 
+
+
+fotos gigantes (perfil.php, home.php), falta responsividade 
+
+
+muitos arquivos com tudo misturado (php, css, js,) o "jogos.php" é assustador  
+
+
+muitas paginas com poucas funções funcionando, exemplo (culinária.php, home.php, jogos.php)
+
+
+algumas imagens nao aparecem (praticamente todas da "home")
+
+
+banco de dados com apenas uma tabela (até o momento. 20/04 05:05h)deve ter no minimo tres ate a segunda pre apresentaçao
+
+
+!!!!!!!! apos selecionar a foto depois do cadastro esta indo para a home , mas para home de outro usuario (criei:fulanim, fui p/ home do pf)
