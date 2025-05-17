@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+
+    /* FUNDO DEGRADE */
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #e49217, #d53e23);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+/* ANIMAÇÃO DO DEGRADE */
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+/* FIM DA ANIMAÇÃO DEGRADE */
+
+.container {
+    max-width: 800px;
+    max-height: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #444;
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: 500px;
+}
+
+/* Menu Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #eee;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    border-bottom: 1px solid #eee;
+}
+
+.nav-menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+.nav-menu li a.active {
+    background-color: #e0e0e0;
+    color: #000;
+    font-weight: bold;
+    border-left: 3px solid #26B4FF;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 1;
+    padding: 25px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilos do Formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #ef4444, #f59e0b);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #ef4444, #f59e0b);
+}
+
+.btn-default {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.btn-default:hover {
+    background-color: #e0e0e0;
+}
+
+.alert {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    color: #856404;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav-menu {
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .nav-menu li {
+        border-bottom: none;
+        border-right: 1px solid #eee;
+        flex-shrink: 0;
+    }
+
+    .nav-menu li a.active {
+        border-left: none;
+        border-bottom: 3px solid #26B4FF;
+    }
+}
+
+.profile-pic {
+    width: 80px; /* Largura padrão */
+    height: 80px; /* Altura padrão */
+    object-fit: cover; /* Garante que a imagem se ajuste ao tamanho sem distorção */
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid #ccc; /* Opcional: borda ao redor da imagem */
+    margin-right: 20px; /* Espaçamento à direita */
+}
